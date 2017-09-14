@@ -7,7 +7,7 @@ Currently, nothing (The Bot doesnt have commands yet)!
 ## How to selfhost it?
 You can't selfhost it yet, if you want to help Developing it, contact me in Direct Messages from [this](https://discord.gg/kgzpCDx) Discord Server!
 
-##Staff
+## Staff
 The Developers of the Bot:
 [Mr.Terax](https://github.com/MrTeraxYT/) | Project Leader, Developer
 [Jigs](https://github.com/heri0nd3) | Developer

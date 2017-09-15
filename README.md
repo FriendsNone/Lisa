@@ -9,5 +9,5 @@ You can't selfhost it yet, if you want to help Developing it, contact me in Dire
 
 ## Staff
 The Developers of the Bot:
-[Mr.Terax](https://github.com/MrTeraxYT/) | Project Leader, Developer
-[Jigs](https://github.com/heri0nd3) | Developer
+[Mr.Terax](https://github.com/MrTeraxYT/) | Project Leader, Developer<br>
+[Jigs](https://github.com/heri0nd3) | Developer<br>

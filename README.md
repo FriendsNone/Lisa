@@ -1,5 +1,5 @@
 # S-Bot
-S-Bot is a Discord Bot by Mr.Terax#9758, written in [Discord.js](https://discord.js.org/) using the [discord.js-commando](https://github.com/Gawdl3y/discord.js-commando)!
+S-Bot is a Discord Bot by Mr.Terax#9758, written in [Discord.js](https://discord.js.org/) using the [discord.js-commando](https://github.com/Gawdl3y/discord.js-commando) Command Framework!
 
 ## Features
 Currently, nothing (The Bot doesnt have commands yet)!
@@ -9,5 +9,5 @@ You can't selfhost it yet, if you want to help Developing it, contact me in Dire
 
 ## Staff
 The Developers of the Bot:<br>
-[Mr.Terax](https://github.com/MrTeraxYT/) | Project Leader, Developer<br>
+[Mr.Terax](https://github.com/MrTeraxYT/) | Project Leader, Lead Developer<br>
 [Jigs](https://github.com/heri0nd3) | Developer<br>

@@ -1,0 +1,9 @@
+{
+"token" : "token_for_the_bot",
+
+"owner" : "a_user_id",
+"prefix" : "a_prefix_for_commands",
+
+"game"   : "let_me_play_something",
+"status" : "a bot status, like 'online'"
+}

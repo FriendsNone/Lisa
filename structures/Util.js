@@ -9,6 +9,9 @@ class Util {
     static setStatus(status, client) {
     try {client.user.setStatus(status)} catch (e) {console.log(`Error while changing Status: ${e}`)}
     }
+    static setUsername(name, client) {
+    try {client.user.setUsername(name)} catch (e) {console.log(`Error while changing Username: ${e}`)}
+    }
 }
 
 module.exports = Util;

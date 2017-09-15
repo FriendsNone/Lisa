@@ -8,6 +8,6 @@ Currently, nothing (The Bot doesnt have commands yet)!
 You can't selfhost it yet, if you want to help Developing it, contact me in Direct Messages from [this](https://discord.gg/kgzpCDx) Discord Server!
 
 ## Staff
-The Developers of the Bot:
+The Developers of the Bot:<br>
 [Mr.Terax](https://github.com/MrTeraxYT/) | Project Leader, Developer<br>
 [Jigs](https://github.com/heri0nd3) | Developer<br>

@@ -12,6 +12,9 @@ class Util {
     static setUsername(name, client) {
     try {client.user.setUsername(name)} catch (e) {console.log(`Error while changing Username: ${e}`)}
     }
+    static setAvatar(link, client) {
+    try {client.user.setAvatar(link)} catch (e) {console.log(`Error while changing Avatar: ${e}`)}
+    }
 }
 
 module.exports = Util;

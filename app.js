@@ -7,7 +7,7 @@ const moment = require('moment');
 const { setGame, setStatus } = require('./structures/Util');
 var p = prefix
 if (!token) return console.log(`[Error] You must provide a Token in the config.json!`)
-if (!OWNERS) return console.log(`[Error] You must provide a Owner ID in the config.json!`)
+if (!OWNERS) return console.log(`[Error] You must provide a Owner ID in the owners.json!`)
 if (!p) return console.log(`[Error] You must provide a Prefix in the config.json!`)
 const client = new CommandoClient({owner: OWNERS, commandPrefix: p, disableEveryone: true, unknownCommandResponse: false});
 client.registry

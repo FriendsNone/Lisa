@@ -9,3 +9,6 @@ You can selfhost it (Instructions [here](https://github.com/MrTeraxYT/S-Bot/wiki
 
 ## Staff
 The creator of the Bot is [Mr.Terax](https://github.com/MrTeraxYT/), you can find the complete list of the Staff [here](https://github.com/MrTeraxYT/S-Bot/blob/master/STAFF.md)
+
+## Using this Repository & Source Code
+By using the Repository and it's Source Code, you agree to the [License](https://github.com/MrTeraxYT/S-Bot/blob/master/LICENSE.md)

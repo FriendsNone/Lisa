@@ -20,6 +20,7 @@ client.registry
 .registerCommandsIn(path.join(__dirname, 'commands'));
 client.on('ready', async () => {
 console.log(`=== Bot Login at ${moment(Date.now()).format("DD.MM.YYYY")  + " " + moment(Date.now()).format("HH:mm:ss")} ===`)
+console.log(`S-Bot Version 0.1`)
 console.log(`Logged in as ${client.user.tag} with User ID ${client.user.id}`)
 console.log(`== Bot Stats ==`)
 console.log(`> Owner    : ${await Promise.all(OWNERS.map(o => client.fetchUser(o).then(u=>u.tag)))} (${OWNERS.length})`)

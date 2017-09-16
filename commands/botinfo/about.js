@@ -24,11 +24,12 @@ module.exports = class AboutCommand extends Command {
         try {
 			const { body } = await snekfetch
 				.get('https://sbot.000webhostapp.com/infos.json');
+			//const Owners = require('https://sbot.000webhostapp.com/owners.json')
         const embed = new RichEmbed()
 		.setTitle(`Info`)
 		.setColor(`#04B4AE`)
-        .setDescription(`I'm ${this.client.user.username}, a Discord Bot powered by ${body.name}, ${body.description} You can find the Link to the GitHub [here](https://github.com/MrTeraxYT/S-Bot/).`)
-		.addField(`Staff`, `[List](https://github.com/MrTeraxYT/S-Bot/blob/master/STAFF.md)`)
+        .setDescription(`I'm ${this.client.user.username}, a Discord Bot powered by ${body.name}, ${body.description} You can find the Link to the GitHub [here](${body.github}).`)
+		//.addField(`Staff`, `${await Promise.all(Owners.map(o => client.fetchUser(o).then(u=>u.tag)))}`)
 		msg.channel.send({embed})
         } catch (e) {msg.reply(`An error occured: ${e}`)}
     }

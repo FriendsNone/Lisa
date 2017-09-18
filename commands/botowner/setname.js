@@ -18,7 +18,7 @@ module.exports = class SetNameCommand extends Command {
 			args: [
                 {
                 key: 'name',
-                prompt: 'What you want to set my name as?',
+                prompt: 'What you want to set my Username as?',
                 type: 'string'
                 }
             ],

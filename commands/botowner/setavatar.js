@@ -17,7 +17,7 @@ module.exports = class SetAvatarCommand extends Command {
 			args: [
                 {
                 key: 'link',
-                prompt: 'What you want to set my avatar as?',
+                prompt: 'What you want to set my Avatar as (Please provide a Image URL)?',
                 type: 'string'
                 }
             ],

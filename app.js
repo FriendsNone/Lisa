@@ -15,7 +15,8 @@ client.registry
 .registerGroups([
     ['botinfo', 'Botinfo'],
     ['botowner', 'Bot Owner'],
-    ['general', 'General']
+    ['general', 'General'],
+    ['music', 'Music']
 ])
 .registerCommandsIn(path.join(__dirname, 'commands'));
 client.on('ready', async () => {

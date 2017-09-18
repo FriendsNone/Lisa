@@ -11,7 +11,7 @@ module.exports = class AboutCommand extends Command {
 			aliases: [],
 			group: 'botinfo',
 			memberName: 'about',
-			description: 'Shows info about S-Bot',
+			description: 'Shows info about Lisa',
 			details: '',
 			guarded: true,
 			//guildOnly: true,

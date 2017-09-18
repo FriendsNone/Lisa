@@ -3,20 +3,15 @@ const Command = require('../../structures/Command');
 const { RichEmbed } = require('discord.js');
 const config = require("../../config.json");
 const snekfetch = require('snekfetch')
+const { perms } = require("../../structures/Util");
 
 module.exports = class AboutCommand extends Command {
 	constructor(client) {
 		super(client, {
 			name: 'ping',
-			aliases: [],
 			group: 'general',
 			memberName: 'ping',
-			description: 'Shows the Bots Latency',
-			details: '',
-			guarded: true,
-			//guildOnly: true,
-			//args: [],
-			clientPermissions: ['EMBED_LINKS']
+			description: 'Shows the Bots Latency'
 		});
 	}
 

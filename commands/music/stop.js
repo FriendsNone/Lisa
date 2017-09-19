@@ -4,11 +4,11 @@ var servers = {};
 module.exports = class BotCommand extends Command {
 	constructor(client) {
 		super(client, {
-			name: 'stop', //Name of the command
-			aliases: [], //Command Aliases
-			group: 'music', //The Commands Group, scroll down a bit for more info
-			memberName: 'stop', //just name it like the Command name
-			description: 'Stops Playing Music and Disconnects', //Command Description, like "shows the Bots latency"
+			name: 'stop',
+			aliases: [],
+			group: 'music',
+			memberName: 'stop',
+			description: 'Stops Playing Music and Disconnects',
             clientPermissions: ['EMBED_LINKS']
 		});
     }

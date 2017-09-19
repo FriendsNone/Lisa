@@ -7,7 +7,7 @@ const Command = require('../../structures/Command');
 const nl = '!!NL!!';
 const nlPattern = new RegExp(nl, 'g');
 
-module.exports = class EvalCommand extends Command {
+module.exports = class BotCommand extends Command {
 	constructor(client) {
 		super(client, {
 			name: 'eval',

@@ -3,7 +3,7 @@ const Command = require('../../structures/Command');
 const Discord = require('discord.js');
 const config = require("../../config.json");
 
-module.exports = class HelpCommand extends Command {
+module.exports = class BotCommand extends Command {
 	constructor(client) {
 		super(client, {
 			name: 'help',

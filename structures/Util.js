@@ -15,6 +15,21 @@ class Util {
     static setAvatar(link, client) {
     try {client.user.setAvatar(link)} catch (e) {console.log(`Error while changing Avatar: ${e}`)}
     }
+    static Send(msg, content) {
+    return msg.channel.send(content)
+    }
+    static Reply(msg, content) {
+    return msg.channel.send(`${msg.author}, ${content}`)
+    }
+    static Embed(msg, embed) {
+    if (!embed.footer){embed.setFooter(`Requested by ${msg.author.tag}`, msg.author.displayAvatarURL); embed.setTimestamp()}
+    if (!embed.color) {embed.setColor(`#BF2456`)}
+    return msg.channel.send({embed})
+    }
+    static CheckNickname(member, msg) {
+    if (member.nickname) {return msg + member.nickname}
+    else return ""
+    } 
 }
 
 module.exports = Util;

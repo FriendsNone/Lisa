@@ -1,8 +1,8 @@
 @echo OFF
-echo You will install the requirements for S-Bot!
+echo You will install the requirements for Lisa!
 PAUSE
-echo Installing following Packages: discord.js, discord.js-commando, path, sequelize, moment, util
-echo Note that you can ignore Warnings! Also, make sure you have installed npm (Node Package Manager)
+echo Installing following Packages: discord.js, discord.js-commando, path, sequelize, moment, util!
+echo Note that you can ignore Warnings! Also, make sure you have installed npm (Node Package Manager) and git
 TIMEOUT 10
 echo [1] Installing / Updating discord.js
 call npm install --save discord.js@11.2.0
@@ -16,6 +16,8 @@ echo [5] Installing / Updating moment
 call npm install --save moment
 echo [6] Installing / Updating util
 call npm install --save util
+echo [7] Installing / Updating snekfetch
+call npm install --save snekfetch
 echo [Done] Installed Packages (Except there were errors)
 echo You can try to run the Bot now!
 PAUSE

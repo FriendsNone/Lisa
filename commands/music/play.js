@@ -9,8 +9,7 @@ var servers = {};
             var server = servers[message.guild.id];
         
             server.dispatcher = connection.playStream(ytdl(server.queue[0], {
-                filter: "audioonly",
-                quality: "lowest"
+                filter: "audioonly"
             }));
             ytdl.getInfo(server.queue[0], function(err, info) {
                 message.channel.send(`Now Playing: **${info.title}**, requested by ${message.author}!`);
@@ -25,20 +24,18 @@ var servers = {};
                 } else {
                     try {
                         connection.disconnect();
-                    } catch(err) {
-        
-                    }
+                        msg.channel.send("Done Playing! Disconnected from Voice Channel!")
+                    } catch(err) {}
                 }
             })
         }
 module.exports = class BotCommand extends Command {
 	constructor(client) {
 		super(client, {
-			name: 'play', //Name of the command
-			aliases: [], //Command Aliases
-			group: 'music', //The Commands Group, scroll down a bit for more info
-			memberName: 'play', //just name it like the Command name
-			description: 'Plays a Track (BETA)', //Command Description, like "shows the Bots latency"
+			name: 'play',
+			group: 'music',
+			memberName: 'play',
+			description: 'Plays a Track (BETA)',
             clientPermissions: ['EMBED_LINKS'],
             args: [
 				{
@@ -52,7 +49,7 @@ module.exports = class BotCommand extends Command {
 
     async run(msg, args) {
 
-            if (!msg.member.voiceChannel) return msg.reply("You must be in a voice channel to play some tunes.");
+            if (!msg.member.voiceChannel) return msg.reply("You must be in a voice channel to play Music!");
             let argument = args.track
             if (!servers[msg.guild.id]) {
                 servers[msg.guild.id] = {

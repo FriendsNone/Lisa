@@ -4,7 +4,7 @@ const Discord = require('discord.js');
 const config = require("../../config.json");
 const { setAvatar } = require('../../structures/Util');
 
-module.exports = class SetAvatarCommand extends Command {
+module.exports = class BotCommand extends Command {
 	constructor(client) {
 		super(client, {
 			name: 'setavatar',

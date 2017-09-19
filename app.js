@@ -16,6 +16,7 @@ client.registry
     ['botinfo', 'Botinfo'],
     ['botowner', 'Bot Owner'],
     ['general', 'General'],
+    ['guildanduserstats', "Guild & User Information"],
     ['music', 'Music']
 ])
 .registerCommandsIn(path.join(__dirname, 'commands'));
@@ -33,5 +34,4 @@ console.log(`> Channels : ${client.channels.size}`)
 await setGame(game, client)
 await setStatus(status, client)
 })
-
 try{client.login(token)} catch(e){console.log(`Error in Login: ${e}`)}

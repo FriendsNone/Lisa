@@ -4,7 +4,7 @@ const Discord = require('discord.js');
 const config = require("../../config.json");
 const { setUsername } = require('../../structures/Util');
 
-module.exports = class SetNameCommand extends Command {
+module.exports = class BotCommand extends Command {
 	constructor(client) {
 		super(client, {
 			name: 'setname',

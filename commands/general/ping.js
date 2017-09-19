@@ -5,7 +5,7 @@ const config = require("../../config.json");
 const snekfetch = require('snekfetch')
 const { perms } = require("../../structures/Util");
 
-module.exports = class AboutCommand extends Command {
+module.exports = class BotCommand extends Command {
 	constructor(client) {
 		super(client, {
 			name: 'ping',

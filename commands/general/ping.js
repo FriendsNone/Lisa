@@ -16,6 +16,6 @@ module.exports = class BotCommand extends Command {
 	}
 
 async run(msg, args, client) {
-    msg.reply(`Ping?`).then(m=>m.edit(`Pong🏓! Latency is ${m.createdTimestamp - msg.createdTimestamp}ms. API Latency is ${Math.round(this.client.ping)}ms`))
+    msg.reply(`⌛ *Testing connectivity…*`).then(m=>m.edit(`🏓 **Pong!** Latency is **${m.createdTimestamp - msg.createdTimestamp} ms**.\nAPI Latency is **${Math.round(this.client.ping)}ms**`))
 }
 };

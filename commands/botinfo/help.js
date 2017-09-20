@@ -1,6 +1,7 @@
 const { stripIndents } = require('common-tags');
 const Command = require('../../structures/Command');
 const Discord = require('discord.js');
+const { Embed } = require("../../structures/Util");
 const config = require("../../config.json");
 
 module.exports = class BotCommand extends Command {
@@ -30,10 +31,8 @@ module.exports = class BotCommand extends Command {
 		if (command) {
 			if (commands.length === 1) {
 				const embed = new Discord.RichEmbed()
-					.setAuthor(`${commands[0].name}`, "https://i.imgur.com/2YnR9rD.png")
+					.setAuthor(`${commands[0].name}`, "https://raw.githubusercontent.com/Terax235/Lisa/master/assets/embedicons/help.png")
                     .setDescription(stripIndents`Description: ${commands[0].description || '-'}\nDetailed: ${commands[0].details || '-'}`)
-					.setColor(`#04B4AE`)
-					.setFooter("Requested By " + msg.author.tag, msg.author.displayAvatarURL)
 					.setTimestamp()
 					.addField('> Usage',
 						msg.anyUsage(`${commands[0].name} ${commands[0].format ? commands[0].format : ''}`))
@@ -48,11 +47,9 @@ module.exports = class BotCommand extends Command {
 			return msg.channel.send(`Seems like this Command does not exist. Use ${msg.usage(null)} to view the avaible Commands.`);
 		} else {
             const embed = new Discord.RichEmbed()
-			    .setAuthor("Commands", "https://i.imgur.com/2bKJuXq.png")
+			    .setAuthor("Commands", "https://raw.githubusercontent.com/Terax235/Lisa/master/assets/embedicons/help.png")
 				.setDescription(`[Use ${msg.usage('<command>')} for more info about a Command!]()`)
-				.setColor(`#04B4AE`);
 				embed.setTimestamp()
-				embed.setFooter("Requested By " + msg.author.tag, msg.author.displayAvatarURL)
 			for (const group of this.client.registry.groups.values()) {
 				embed.addField(`❯ ${group.name}`,
 				group.commands.map(c => `[${c.name}]() - ${c.description || '*No Description Set*'}`).join('\n') || 'None');

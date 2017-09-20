@@ -1,6 +1,7 @@
 const { stripIndents } = require('common-tags');
 const Command = require('../../structures/Command');
 const { RichEmbed } = require('discord.js');
+const { Embed } = require("../../structures/Util");
 const config = require("../../config.json");
 const snekfetch = require('snekfetch')
 
@@ -25,8 +26,7 @@ module.exports = class BotCommand extends Command {
 			const { body } = await snekfetch
 				.get('https://sbot.000webhostapp.com/infos.json');
         const embed = new RichEmbed()
-		.setTitle(`Info`)
-		.setColor(`#04B4AE`)
+		.setAuthor("Info", "https://raw.githubusercontent.com/Terax235/Lisa/master/assets/embedicons/about.png")
         .setDescription(`I'm ${this.client.user.username}, a Discord Bot powered by ${body.name}, ${body.description} You can find the Link to the GitHub [here](${body.github}).`)
 		.addField(`Staff`, `[List](${body.github}blob/master/STAFF.md)`)
 		msg.channel.send({embed})

@@ -12,7 +12,7 @@ var servers = {};
                 filter: "audioonly"
             }));
             ytdl.getInfo(server.queue[0], function(err, info) {
-                message.channel.send(`Now Playing: **${info.title}**, requested by ${message.author}!`);
+                message.channel.send(`🎵 Now Playing: ***${info.title}***, requested by ${message.author}!`);
             });
             
             
@@ -49,7 +49,7 @@ module.exports = class BotCommand extends Command {
 
     async run(msg, args) {
 
-            if (!msg.member.voiceChannel) return msg.reply("You must be in a voice channel to play Music!");
+            if (!msg.member.voiceChannel) return msg.reply("You must be in a voice channel to play some tunes.");
             let argument = args.track
             if (!servers[msg.guild.id]) {
                 servers[msg.guild.id] = {

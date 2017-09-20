@@ -26,7 +26,7 @@ module.exports = class BotCommand extends Command {
     ownernickname += `(aka ${guild.owner.displayName})`
     }
     const embed = new RichEmbed()
-    .setAuthor("Serverinfo", "https://raw.githubusercontent.com/Terax235/Lisa/master/assets/embedicons/sinfo.png")
+    .setAuthor("Server Information", "https://raw.githubusercontent.com/Terax235/Lisa/master/assets/embedicons/sinfo.png")
     .setDescription(guild.name)
     .addField(`> Guild Owner`, `${guild.owner.user.tag} ${CheckNickname(guild.owner, "-> aka ")}`)
     .addField(`> Region`, regions[guild.region] ? regions[guild.region] : `None / Invalid`)
